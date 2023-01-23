@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Hero from "../parts/HomePage/Hero";
 import About from "../parts/HomePage/About";
 import Discover from "../parts/HomePage/Discover";
+import Experience from "../parts/HomePage/Experience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Discover />
+        <Experience />
       </main>
     </>
   );
