@@ -48,11 +48,11 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-24 right-0 h-full w-[70%] bg-white px-8 py-12 shadow-[-2px_6px_4px_rgba(0,0,0,0.1)] transition-all duration-400 ${
+          className={`header__menu fixed top-24 right-0 h-full w-[70%] bg-white px-8 py-12 shadow-[-2px_6px_4px_rgba(0,0,0,0.1)] transition-all duration-400 md:static md:top-0 md:flex md:h-auto md:w-auto md:items-center md:gap-6 md:bg-transparent md:p-0 md:shadow-none lg:gap-8 ${
             menuOpen ? "right-0" : "-right-full"
           }`}
         >
-          <ul className="header__list mb-6 flex flex-col gap-6">
+          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex-row lg:gap-8">
             {[
               ["About", "/about"],
               ["Discover", "/discover"],
@@ -62,7 +62,9 @@ export default function Header() {
               <li key={url}>
                 <Link
                   to={url}
-                  className="header__link text-[15px] font-medium text-gray-600 hover:text-green-600"
+                  className={`header__link text-[15px] font-medium text-gray-600 hover:text-green-600 ${
+                    stickyHeader ? "md:text-green-600" : "md:text-white"
+                  }`}
                 >
                   {title}
                 </Link>
@@ -74,7 +76,7 @@ export default function Header() {
         </div>
 
         <div
-          className={`header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] transition-all duration-400 ${
+          className={`header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] transition-all duration-400 md:hidden ${
             stickyHeader ? "text-green-600" : "text-white"
           }`}
           onClick={setHandleMenu}
