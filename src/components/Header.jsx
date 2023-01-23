@@ -48,8 +48,8 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-12 text-center shadow-md transition-all duration-400 ${
-            menuOpen ? "scale-y-100" : "scale-y-0"
+          className={`header__menu fixed top-24 right-0 h-full w-[70%] bg-white px-8 py-12 shadow-[-2px_6px_4px_rgba(0,0,0,0.1)] transition-all duration-400 ${
+            menuOpen ? "right-0" : "-right-full"
           }`}
         >
           <ul className="header__list mb-6 flex flex-col gap-6">
