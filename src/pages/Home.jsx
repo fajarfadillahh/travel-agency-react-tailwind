@@ -6,6 +6,7 @@ import Hero from "../parts/HomePage/Hero";
 import About from "../parts/HomePage/About";
 import Discover from "../parts/HomePage/Discover";
 import Experience from "../parts/HomePage/Experience";
+import Video from "../parts/HomePage/Video";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Discover />
         <Experience />
+        <Video />
       </main>
     </>
   );
