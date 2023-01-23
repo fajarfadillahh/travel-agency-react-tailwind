@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
@@ -6,19 +6,43 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import Button from "./Button";
 
 export default function Header() {
-  // menu open [mobile version]
+  // MENU OPEN [MOBILE VERSION]
   const [menuOpen, setMenuOpen] = useState(false);
 
   const setHandleMenu = () => {
     setMenuOpen((even) => !even);
   };
 
+  // STICKY HEADER
+  const [stickyHeader, setStickyHeader] = useState();
+
+  useEffect(() => {
+    const addStickyHeader = () => {
+      if (window.scrollY >= 5) {
+        setStickyHeader(true);
+      } else {
+        setStickyHeader(false);
+      }
+    };
+    window.addEventListener("scroll", addStickyHeader);
+
+    return () => {
+      window.removeEventListener("scroll", addStickyHeader);
+    };
+  }, [stickyHeader]);
+
   return (
-    <header className="header fixed top-0 left-0 z-50 w-full bg-transparent">
+    <header
+      className={`header fixed top-0 left-0 z-50 w-full transition-all duration-400 ${
+        stickyHeader ? "bg-white shadow-md" : "bg-transparent shadow-none"
+      }`}
+    >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
-          className="header__logo text-[18px] font-bold text-green-600"
+          className={`header__logo text-[18px] font-bold transition-all duration-400 ${
+            stickyHeader ? "text-green-600" : "text-white"
+          }`}
         >
           Travel.
         </Link>
@@ -50,7 +74,9 @@ export default function Header() {
         </div>
 
         <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-green-600"
+          className={`header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] transition-all duration-400 ${
+            stickyHeader ? "text-green-600" : "text-white"
+          }`}
           onClick={setHandleMenu}
         >
           {menuOpen ? <RiCloseLine /> : <RiMenu3Line />}
