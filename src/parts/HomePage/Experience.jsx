@@ -16,7 +16,7 @@ export default function Experience() {
 
           <div className="experience__group grid grid-cols-3 items-center gap-8">
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-gray-600">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600">
                 24
               </h3>
               <p className="experience__content-text text-[12px] text-gray-600">
@@ -26,7 +26,7 @@ export default function Experience() {
             </div>
 
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-gray-600">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600">
                 1500+
               </h3>
               <p className="experience__content-text text-[12px] text-gray-600">
@@ -36,7 +36,7 @@ export default function Experience() {
             </div>
 
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-gray-600">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600">
                 850+
               </h3>
               <p className="experience__content-text text-[12px] text-gray-600">
