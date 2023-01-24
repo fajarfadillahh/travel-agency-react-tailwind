@@ -9,7 +9,7 @@ import AboutImg2 from "../../assets/images/about2.jpg";
 
 export default function About() {
   return (
-    <section className="about section">
+    <section className="about section transition-all duration-400 dark:bg-gray-900">
       <div className="about__container container grid justify-items-center gap-12 xs:max-w-sm md:max-w-3xl md:grid-cols-2 lg:max-w-4xl xl:max-w-5xl">
         <div className="about__data text-center md:text-left">
           <h1 className="about__title section-title">

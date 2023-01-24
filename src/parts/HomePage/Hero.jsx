@@ -16,7 +16,7 @@ import HeroImg2 from "../../assets/images/hero2.jpg";
 
 export default function Hero() {
   return (
-    <section className="hero pb-16">
+    <section className="hero pb-16 transition-all duration-400 dark:bg-gray-900">
       <div className="hero__wrapper relative flex h-[85vh] items-center justify-center xl:h-screen">
         {/* hero bg */}
         <img
