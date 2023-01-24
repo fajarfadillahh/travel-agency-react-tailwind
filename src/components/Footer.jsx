@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="footer pt-32 pb-16">
+    <footer className="footer pt-32 pb-16 transition-all duration-400 dark:bg-gray-900">
       <div className="footer__container container grid gap-24 lg:max-w-4xl xl:max-w-5xl">
         <div className="footer__group grid gap-12 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:justify-items-center">
           <div className="footer__content">
             <Link
               to="/"
-              className="footer__content-logo text-[18px] font-bold text-green-600"
+              className="footer__content-logo text-[18px] font-bold text-green-600 dark:text-white"
             >
               Travel
             </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
               experience.
             </p>
 
-            <ul className="footer__content-socials inline-flex w-max items-center gap-6 text-[1.3rem] text-green-600">
+            <ul className="footer__content-socials inline-flex w-max items-center gap-6 text-[1.3rem] text-green-600 dark:text-white">
               <Link to="/" target="_blank" className="footer__content-icon">
                 <RiTwitterFill />
               </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600">
+            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600 dark:text-white">
               About
             </h3>
 
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600">
+            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600 dark:text-white">
               Compony
             </h3>
 
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600">
+            <h3 className="footer__content-title pb-4 text-[17px] font-semibold text-green-600 dark:text-white">
               Support
             </h3>
 
@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="footer__copyrights border-t border-gray-200 pt-8 text-center text-[15px] text-green-600">
+        <p className="footer__copyrights border-t border-gray-200 pt-8 text-center text-[15px] text-green-600 dark:text-white">
           © Copyrights 2023 Travel. All rigths reserved | Develop by Fajar
           Fadillah A ❤️
         </p>
