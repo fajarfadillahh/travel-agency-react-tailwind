@@ -5,7 +5,7 @@ import Card from "../../components/Card";
 
 export default function Place() {
   return (
-    <section className="place section">
+    <section className="place section transition-all duration-400 dark:bg-gray-900">
       <div className="place__container container grid gap-8 xs:max-w-sm lg:max-w-3xl xl:max-w-4xl">
         <div className="place__data text-center">
           <h1 className="place__title section-title">Choose Your Place</h1>
