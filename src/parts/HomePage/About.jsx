@@ -10,13 +10,13 @@ import AboutImg2 from "../../assets/images/about2.jpg";
 export default function About() {
   return (
     <section className="about section">
-      <div className="about__container container grid justify-items-center gap-12">
-        <div className="about__data text-center">
+      <div className="about__container container grid justify-items-center gap-12 xs:max-w-sm md:max-w-3xl md:grid-cols-2 lg:max-w-4xl xl:max-w-5xl">
+        <div className="about__data text-center md:text-left">
           <h1 className="about__title section-title">
             More Informastion About <br />
             The Best Beaches
           </h1>
-          <p className="about__text section-text pb-8">
+          <p className="about__text section-text pb-8 lg:max-w-sm">
             You can find the most beautiful and pleasant places at the best
             prices with special discounts, you choose the place we will guide
             you all the way to wait, get your place now.
@@ -27,8 +27,16 @@ export default function About() {
         </div>
 
         <div className="about__img flex items-center gap-4">
-          <img src={AboutImg1} alt="about img" className="about__img-1 w-32" />
-          <img src={AboutImg2} alt="about img" className="about__img-2 w-44" />
+          <img
+            src={AboutImg1}
+            alt="about img"
+            className="about__img-1 w-32 lg:w-40 xl:w-48"
+          />
+          <img
+            src={AboutImg2}
+            alt="about img"
+            className="about__img-2 w-44 lg:w-56 xl:w-64"
+          />
         </div>
       </div>
     </section>
