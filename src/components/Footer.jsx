@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer pt-32 pb-16">
-      <div className="footer__container container grid gap-24">
-        <div className="footer__group grid gap-12">
+      <div className="footer__container container grid gap-24 lg:max-w-4xl xl:max-w-5xl">
+        <div className="footer__group grid gap-12 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:justify-items-center">
           <div className="footer__content">
             <Link
               to="/"
