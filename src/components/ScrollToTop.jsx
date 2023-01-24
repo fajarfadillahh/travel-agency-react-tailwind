@@ -28,8 +28,8 @@ export default function ScrollToTop() {
 
   return (
     <button
-      className={`scroll fixed right-6 z-10 inline-flex cursor-pointer bg-green-600 p-3 text-[1.3rem] text-white transition-all duration-400 ${
-        isVisible ? "bottom-16" : "-bottom-full"
+      className={`scroll fixed right-6 z-10 inline-flex cursor-pointer bg-green-600 p-3 text-[1.3rem] text-white transition-all duration-400 xl:right-12 ${
+        isVisible ? "bottom-16 xl:bottom-20" : "-bottom-full"
       }`}
       onClick={scrollToTop}
     >
