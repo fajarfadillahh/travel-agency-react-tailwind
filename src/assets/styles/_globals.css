@@ -1,0 +1,9 @@
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-green-600 text-white;
+}
+
+/* ===== ::-WEBKIT-SCROLLBAR ===== */
+::-webkit-scrollbar {
+  @apply hidden;
+}
