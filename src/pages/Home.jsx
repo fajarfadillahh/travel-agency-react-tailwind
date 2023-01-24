@@ -8,6 +8,7 @@ import Discover from "../parts/HomePage/Discover";
 import Experience from "../parts/HomePage/Experience";
 import Video from "../parts/HomePage/Video";
 import Place from "../parts/HomePage/Place";
+import Subscribe from "../components/Subscribe";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Experience />
         <Video />
         <Place />
+        <Subscribe />
       </main>
     </>
   );
