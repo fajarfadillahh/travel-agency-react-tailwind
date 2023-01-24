@@ -6,7 +6,7 @@ import ExperienceImg2 from "../../assets/images/experience2.jpg";
 
 export default function Experience() {
   return (
-    <section className="experience section">
+    <section className="experience section transition-all duration-400 dark:bg-gray-900">
       <div className="experience__container container grid justify-items-center gap-12 xs:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
         <div className="experience__data text-center">
           <h1 className="experience__title section-title">
@@ -16,30 +16,30 @@ export default function Experience() {
 
           <div className="experience__group grid grid-cols-3 items-center gap-8 md:gap-16 lg:gap-24">
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 lg:text-[24px] xl:text-[28px]">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 dark:text-white lg:text-[24px] xl:text-[28px]">
                 24
               </h3>
-              <p className="experience__content-text text-[12px] text-gray-600">
+              <p className="experience__content-text text-[12px] text-gray-600 dark:text-white">
                 Year <br />
                 Experience
               </p>
             </div>
 
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 lg:text-[24px] xl:text-[28px]">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 dark:text-white lg:text-[24px] xl:text-[28px]">
                 1500+
               </h3>
-              <p className="experience__content-text text-[12px] text-gray-600">
+              <p className="experience__content-text text-[12px] text-gray-600 dark:text-white">
                 Tours <br />
                 Complete
               </p>
             </div>
 
             <div className="experience__content">
-              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 lg:text-[24px] xl:text-[28px]">
+              <h3 className="experience__content-number pb-1 text-[20px] font-semibold text-green-600 dark:text-white lg:text-[24px] xl:text-[28px]">
                 850+
               </h3>
-              <p className="experience__content-text text-[12px] text-gray-600">
+              <p className="experience__content-text text-[12px] text-gray-600 dark:text-white">
                 Tourist <br />
                 Destinations
               </p>
