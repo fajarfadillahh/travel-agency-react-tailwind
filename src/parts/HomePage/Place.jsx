@@ -6,12 +6,12 @@ import Card from "../../components/Card";
 export default function Place() {
   return (
     <section className="place section">
-      <div className="place__container container grid gap-8">
+      <div className="place__container container grid gap-8 xs:max-w-sm lg:max-w-3xl xl:max-w-4xl">
         <div className="place__data text-center">
           <h1 className="place__title section-title">Choose Your Place</h1>
         </div>
 
-        <div className="place__group grid grid-cols-2 gap-6">
+        <div className="place__group grid grid-cols-2 gap-6 lg:grid-cols-3">
           {data.map((item) => (
             <Card
               key={item.id}
