@@ -2,7 +2,7 @@ import React from "react";
 
 // import swiper components & modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow } from "swiper";
+import { EffectCoverflow, Autoplay } from "swiper";
 
 // import swiper styles
 import "swiper/css";
@@ -32,10 +32,14 @@ export default function Discover() {
           slidesPerView={"auto"}
           loop={true}
           spaceBetween={32}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
           coverflowEffect={{
             rotate: 0,
           }}
-          modules={[EffectCoverflow]}
+          modules={[EffectCoverflow, Autoplay]}
           className="discover__group"
         >
           <SwiperSlide className="discover__card group relative w-56 overflow-hidden lg:w-64 xl:w-72">
