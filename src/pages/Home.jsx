@@ -11,6 +11,7 @@ import Place from "../parts/HomePage/Place";
 import Subscribe from "../components/Subscribe";
 import Sponsor from "../components/Sponsor";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Sponsor />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
