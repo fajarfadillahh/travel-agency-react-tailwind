@@ -24,7 +24,7 @@ export default function Discover() {
         </h1>
       </div>
 
-      <div className="discover__container container">
+      <div className="discover__container container md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -38,7 +38,7 @@ export default function Discover() {
           modules={[EffectCoverflow]}
           className="discover__group"
         >
-          <SwiperSlide className="discover__card group relative w-56 overflow-hidden">
+          <SwiperSlide className="discover__card group relative w-56 overflow-hidden lg:w-64 xl:w-72">
             <img
               src={DiscoverImg1}
               alt="discover img"
@@ -58,7 +58,7 @@ export default function Discover() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="discover__card group relative w-56 overflow-hidden">
+          <SwiperSlide className="discover__card group relative w-56 overflow-hidden lg:w-64 xl:w-72">
             <img
               src={DiscoverImg2}
               alt="discover img"
@@ -78,7 +78,7 @@ export default function Discover() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="discover__card group relative w-56 overflow-hidden">
+          <SwiperSlide className="discover__card group relative w-56 overflow-hidden lg:w-64 xl:w-72">
             <img
               src={DiscoverImg3}
               alt="discover img"
@@ -98,7 +98,7 @@ export default function Discover() {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="discover__card group relative w-56 overflow-hidden">
+          <SwiperSlide className="discover__card group relative w-56 overflow-hidden lg:w-64 xl:w-72">
             <img
               src={DiscoverImg4}
               alt="discover img"
