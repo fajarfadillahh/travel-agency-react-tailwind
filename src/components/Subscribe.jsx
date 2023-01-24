@@ -6,8 +6,8 @@ import Button from "./Button";
 export default function Subscribe() {
   return (
     <section className="subscribe section">
-      <div className="subscribe__bg bg-green-600 py-16">
-        <div className="subscribe__container container grid justify-items-center gap-12">
+      <div className="subscribe__bg bg-green-600 py-16 md:bg-transparent">
+        <div className="subscribe__container container grid gap-12 md:bg-green-600 md:py-20 md:px-12 lg:max-w-3xl xl:max-w-4xl">
           <div className="subscribe__data text-center">
             <h1 className="subscribe__title section-title text-white">
               Subscribe To Get <br />
@@ -21,7 +21,7 @@ export default function Subscribe() {
 
           <form
             action=""
-            className="subscribe__form flex items-center gap-4 bg-white p-2"
+            className="subscribe__form flex items-center gap-4 bg-white p-2 xs:w-[420px] xs:justify-self-center md:w-[500px]"
           >
             <input
               type="email"
