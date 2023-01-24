@@ -16,7 +16,7 @@ import DiscoverImg4 from "../../assets/images/discover4.jpg";
 
 export default function Discover() {
   return (
-    <section className="discover section">
+    <section className="discover section transition-all duration-400 dark:bg-gray-900">
       <div className="discover__data pb-8 text-center">
         <h1 className="discover__title section-title">
           Discover The Most <br />
