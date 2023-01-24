@@ -47,7 +47,7 @@ export default function Hero() {
             <li>
               <Link
                 to="/"
-                className="hero__socials-icon inline-flex text-[1.3rem] text-white xl:text-[1.8rem]"
+                className="hero__socials-icon inline-flex text-[1.3rem] text-white hover:text-green-600 xl:text-[1.8rem]"
               >
                 <RiInstagramFill />
               </Link>
@@ -55,7 +55,7 @@ export default function Hero() {
             <li>
               <Link
                 to="/"
-                className="hero__socials-icon inline-flex text-[1.3rem] text-white xl:text-[1.8rem]"
+                className="hero__socials-icon inline-flex text-[1.3rem] text-white hover:text-green-600 xl:text-[1.8rem]"
               >
                 <RiYoutubeFill />
               </Link>
@@ -63,7 +63,7 @@ export default function Hero() {
             <li>
               <Link
                 to="/"
-                className="hero__socials-icon inline-flex text-[1.3rem] text-white xl:text-[1.8rem]"
+                className="hero__socials-icon inline-flex text-[1.3rem] text-white hover:text-green-600 xl:text-[1.8rem]"
               >
                 <RiTwitterFill />
               </Link>
