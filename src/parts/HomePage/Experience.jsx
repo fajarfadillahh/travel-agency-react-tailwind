@@ -7,7 +7,7 @@ import ExperienceImg2 from "../../assets/images/experience2.jpg";
 export default function Experience() {
   return (
     <section className="experience section">
-      <div className="experience__container container grid justify-items-center gap-12 xs:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-5xl">
+      <div className="experience__container container grid justify-items-center gap-12 xs:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-4xl">
         <div className="experience__data text-center">
           <h1 className="experience__title section-title">
             With Our Experience <br />

@@ -24,18 +24,18 @@ export default function Video() {
 
   return (
     <section className="video section">
-      <div className="video__container container grid justify-items-center gap-12">
+      <div className="video__container container grid justify-items-center gap-12 xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl">
         <div className="video__data text-center">
           <h1 className="video__title section-title">
             The Best View Video <br /> In The World
           </h1>
-          <p className="video__text section-text">
+          <p className="video__text section-text sm:max-w-sm">
             Find out more with our video of the most beautiful and pleasant
             places for you and your family.
           </p>
         </div>
 
-        <div className="video__content relative">
+        <div className="video__content relative lg:max-w-3xl">
           <video ref={videoRef} onEnded={handleVideoEnded}>
             <source src={VideoFile} type="video/mp4" />
           </video>
