@@ -7,6 +7,7 @@ import About from "../parts/HomePage/About";
 import Discover from "../parts/HomePage/Discover";
 import Experience from "../parts/HomePage/Experience";
 import Video from "../parts/HomePage/Video";
+import Place from "../parts/HomePage/Place";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Discover />
         <Experience />
         <Video />
+        <Place />
       </main>
     </>
   );
