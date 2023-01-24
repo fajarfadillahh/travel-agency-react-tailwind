@@ -9,6 +9,7 @@ import Experience from "../parts/HomePage/Experience";
 import Video from "../parts/HomePage/Video";
 import Place from "../parts/HomePage/Place";
 import Subscribe from "../components/Subscribe";
+import Sponsor from "../components/Sponsor";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Video />
         <Place />
         <Subscribe />
+        <Sponsor />
       </main>
     </>
   );
