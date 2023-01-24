@@ -5,7 +5,7 @@ import Button from "./Button";
 
 export default function Subscribe() {
   return (
-    <section className="subscribe section">
+    <section className="subscribe section transition-all duration-400 dark:bg-gray-900">
       <div className="subscribe__bg bg-green-600 py-16 md:bg-transparent">
         <div className="subscribe__container container grid gap-12 md:bg-green-600 md:py-20 md:px-12 lg:max-w-3xl xl:max-w-4xl">
           <div className="subscribe__data text-center">
