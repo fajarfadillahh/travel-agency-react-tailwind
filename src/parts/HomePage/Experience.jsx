@@ -51,12 +51,12 @@ export default function Experience() {
           <img
             src={ExperienceImg1}
             alt="experience img"
-            className="experience__img-1 w-[290px] pb-16 xs:w-[330px] md:w-[400px] lg:w-[480px] xl:w-[700px]"
+            className="experience__img-1 w-[290px] pb-16 xs:w-[330px] md:w-[400px] lg:w-[550px] xl:w-[700px]"
           />
           <img
             src={ExperienceImg2}
             alt="experience img"
-            className="experience__img-2 absolute -right-6 top-12 w-[130px] xs:w-[160px] md:-right-12 md:w-[190px] lg:-right-16 lg:w-[210px] xl:-right-24 xl:top-20 xl:w-[300px]"
+            className="experience__img-2 absolute -right-6 top-12 w-[130px] xs:w-[160px] md:-right-12 md:w-[190px] lg:-right-16 lg:w-[240px] xl:-right-24 xl:top-20 xl:w-[300px]"
           />
         </div>
       </div>
