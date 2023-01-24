@@ -23,7 +23,7 @@ export default function Video() {
   };
 
   return (
-    <section className="video section">
+    <section className="video section transition-all duration-400 dark:bg-gray-900">
       <div className="video__container container grid justify-items-center gap-12 xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl">
         <div className="video__data text-center">
           <h1 className="video__title section-title">
